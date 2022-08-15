@@ -9,6 +9,15 @@ a:link,a:visited,a:hover,a:active {
 
 header {
     background: darkseagreen;
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
+
+#logo {
+    max-width: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 section {
@@ -19,25 +28,11 @@ section {
     max-width: 1024px;
 }
 
-header {
-    padding-top: 40px;
-    padding-bottom: 60px;
-}
-
-#logo {
-    width: 50%;
-    max-width: 400px;
-    display: block;
+.icon-strip {
+    max-width: 500px;
     margin-left: auto;
     margin-right: auto;
-}
-
-div.br {
-    height: 1px;
-    background-color: lightgray;
-    box-sizing: border-box;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    text-align: center;
 }
 
 a.img-link {
@@ -48,13 +43,6 @@ a.img-link > img {
     margin: 35px 15px 15px 15px;
 }
 
-.icon-strip {
-    max-width: 500px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-}
-
 .map {
     box-shadow: rgba(0, 0, 0, 0.16) 0 10px 36px 0, rgba(0, 0, 0, 0.06) 0 0 0 1px;
     width: 90%;
@@ -62,4 +50,60 @@ a.img-link > img {
     display: block;
     border:0;
     margin: 35px auto;
+}
+
+div.br {
+    height: 1px;
+    background-color: lightgray;
+    box-sizing: border-box;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+@media screen and (max-width: 1080px) {
+    /* applies only if the screen is narrower than 500px */
+    #logo {
+        max-width: 300px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    /* applies only if the screen is narrower than 500px */
+    #logo {
+        max-width: 200px;
+    }
+}
+
+@media screen and (max-height: 810px) {
+    header {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    a.img-link > img {
+        width: 36px;
+        margin: 25px 10px 10px 10px;
+    }
+
+    div.br {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-height: 412px) {
+    header {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    a.img-link > img {
+        width: 24px;
+        margin: 15px 5px 5px 5px;
+    }
+
+    div.br {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
 }
