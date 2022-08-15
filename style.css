@@ -37,7 +37,7 @@ div.br {
     background-color: lightgray;
     box-sizing: border-box;
     margin-top: 15px;
-    margin-bottom: 35px;
+    margin-bottom: 15px;
 }
 
 a.img-link {
@@ -60,7 +60,6 @@ a.img-link > img {
     width: 90%;
     height: 400px;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
     border:0;
+    margin: 35px auto;
 }
